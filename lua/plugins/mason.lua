@@ -1,7 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
--- Customize Mason plugins
-
 ---@type LazySpec
 return {
   -- use mason-lspconfig to configure LSP installations
@@ -40,4 +36,17 @@ return {
       })
     end,
   },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+        registries = {
+            -- default Mason registry has highest priority
+            "github:mason-org/mason-registry",
+            -- Add the AstroNvim mason registry
+            "github:AstroNvim/mason-registry",
+            "github:Crashdummyy/mason-registry",
+        },
+    },
+    
+  }
 }
