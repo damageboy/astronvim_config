@@ -15,4 +15,5 @@ return {
   { import = "astrocommunity.test.neotest" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.split-and-window.edgy-nvim" },
+  { import = "astrocommunity.indent.indent-rainbowline" },
 }
